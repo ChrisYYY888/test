@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7b8b057-a80f-45d3-b5f8-0777e7ea6d47" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/BeautifulReport.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/report_test_gd.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/report_test_gd.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -158,7 +158,12 @@
       <workItem from="1598411980638" duration="1081000" />
       <workItem from="1598509565282" duration="504000" />
       <workItem from="1598845685315" duration="2040000" />
-      <workItem from="1599013617705" duration="951000" />
+      <workItem from="1599013617705" duration="2361000" />
+      <workItem from="1599098839006" duration="298000" />
+      <workItem from="1599199069904" duration="931000" />
+      <workItem from="1599317875754" duration="352000" />
+      <workItem from="1599322505237" duration="9000" />
+      <workItem from="1599469314517" duration="1718000" />
     </task>
     <servers />
   </component>
@@ -179,7 +184,7 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/test$run.coverage" NAME="run Coverage Results" MODIFIED="1598866222368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/test$run.coverage" NAME="run Coverage Results" MODIFIED="1599471589799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$Unittests_in_test_gd_py.coverage" NAME="Unittests in test_gd.py Coverage Results" MODIFIED="1598325271806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcases/test_api_gd" />
     <SUITE FILE_PATH="coverage/test$netReport.coverage" NAME="netReport Coverage Results" MODIFIED="1598865930760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/test$api_gd.coverage" NAME="api_gd Coverage Results" MODIFIED="1598325176499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api" />

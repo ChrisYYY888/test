@@ -14,10 +14,15 @@ print(base_path)
 
 def run_test():
     case_dir = base_path + 'test_cases/'
-    discover = unittest.defaultTestLoader.discover(case_dir, pattern='test_gd.py')
+    discover = unittest.defaultTestLoader.discover(case_dir, pattern='test_*.py')
     filename = base_path + 'report/report_test_gd.html'
     fp = open(filename, 'wb')
     title = '接口自动化测试报告'
+    # # 文本报告
+    # file = base_path + 'report/report_test.html'
+    # f = open(file, 'wb')
+    # runner = unittest.TextTestRunner()
+    # runner.run(discover)
     #
     runner = HTMLTestRunner(stream=fp,
                             title=title,
@@ -32,12 +37,12 @@ def run_test():
     #                                                     '，Python版本：' + sys.version,
     #                                         verbosity=2)
     # runner_echarts.run(discover)
-    # # BeautifulReport
+    # BeautifulReport
     # result = BeautifulReport(discover)
     # result.report(filename=time.strftime("%Y-%m-%d %H:%M:%S") + '测试报告',
-    #               description='*****报告' + '\n执行环境：系统：' + platform.platform() + '，Python版本：' + sys.version,,
+    #               description='*****报告' + ' 执行环境：系统：' + platform.platform() + '，Python版本：' + sys.version,
     #               report_dir=base_path + '/report')
-    fp.close()
+    # fp.close()
 
 
 if __name__ == '__main__':
