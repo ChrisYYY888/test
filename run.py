@@ -19,17 +19,18 @@ def run_test():
     fp = open(filename, 'wb')
     title = '接口自动化测试报告'
     # # 文本报告
-    # file = base_path + 'report/report_test.html'
-    # f = open(file, 'wb')
-    # runner = unittest.TextTestRunner()
+    # file = base_path + 'report/report_test.txt'
+    # f = open(file, 'w')
+    # runner = unittest.TextTestRunner(stream=f)
     # runner.run(discover)
-    #
+    # HTMLTestRunner
     runner = HTMLTestRunner(stream=fp,
                             title=title,
                             description='执行环境：系统：' + platform.platform() + '，Python版本：' + sys.version,
                             verbosity=2,
                             tester='yinqiang')
-    runner.run(discover)
+    result = runner.run(discover)
+    # print(result)
     # # 饼状图报告
     # runner_echarts = HTMLTestRunner_Echarts(stream=fp,
     #                                         title=title,

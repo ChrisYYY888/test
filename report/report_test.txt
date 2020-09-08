@@ -1,0 +1,26 @@
+.EF
+======================================================================
+ERROR: test_3 (test_gd.TestGD)
+接口测试脚本3
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yinqiang/PycharmProjects/test/test_cases/test_gd.py", line 26, in test_3
+    self.c = self.a + self.b
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+======================================================================
+FAIL: test_gd (test_gd.TestGD)
+高德开放接口测试脚本
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/yinqiang/PycharmProjects/test/test_cases/test_gd.py", line 12, in test_gd
+    self.assertEqual(self.r['status'], "1")
+AssertionError: '0' != '1'
+- 0
++ 1
+
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.098s
+
+FAILED (failures=1, errors=1)
