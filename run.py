@@ -24,31 +24,31 @@ def run_test():
     # runner = unittest.TextTestRunner(stream=f)
     # runner.run(discover)
     # HTMLTestRunner
-    runner = HTMLTestRunner(stream=fp,
-                            title=title,
-                            description='执行环境：系统：' + platform.platform() + '，Python版本：' + sys.version,
-                            verbosity=2,
-                            tester='yinqiang')
-    result = runner.run(discover)
+    # runner = HTMLTestRunner(stream=fp,
+    #                         title=title,
+    #                         description='执行环境：系统：' + platform.platform() + '，Python版本：' + sys.version,
+    #                         verbosity=2,
+    #                         tester='yinqiang')
+    # result = runner.run(discover)
+    # 饼状图报告
+    # runner_echarts = HTMLTestRunner_Echarts(stream=fp,
+    #                                         title=title,
+    #                                         description='Interface AutoTest,执行环境：系统：' + platform.platform() +
+    #                                                     '，Python版本：' + sys.version,
+    #                                         verbosity=2)
+    # result = runner_echarts.run(discover)
+    # BeautifulReport
+    result = BeautifulReport(discover)
+    result.report(filename=time.strftime("%Y-%m-%d %H:%M:%S") + '测试报告',
+                  description='*****报告' + ' 执行环境：系统：' + platform.platform() + '，Python版本：' + sys.version,
+                  report_dir=base_path + '/report')
     print("all cases number: {}".format(result.testsRun))
     print("failed cases number: {}".format(result.failure_count))
     print("failed cases reason: {}".format(result.failures))
     print("error cases number: {}".format(result.error_count))
     print("error cases reason: {}".format(result.errors))
     print("success cases number: {}".format(result.success_count))
-    # # 饼状图报告
-    # runner_echarts = HTMLTestRunner_Echarts(stream=fp,
-    #                                         title=title,
-    #                                         description='Interface AutoTest,执行环境：系统：' + platform.platform() +
-    #                                                     '，Python版本：' + sys.version,
-    #                                         verbosity=2)
-    # runner_echarts.run(discover)
-    # BeautifulReport
-    # result = BeautifulReport(discover)
-    # result.report(filename=time.strftime("%Y-%m-%d %H:%M:%S") + '测试报告',
-    #               description='*****报告' + ' 执行环境：系统：' + platform.platform() + '，Python版本：' + sys.version,
-    #               report_dir=base_path + '/report')
-    # fp.close()
+    fp.close()
 
 
 if __name__ == '__main__':
