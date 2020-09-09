@@ -30,7 +30,12 @@ def run_test():
                             verbosity=2,
                             tester='yinqiang')
     result = runner.run(discover)
-    # print(result)
+    print("all cases number: {}".format(result.testsRun))
+    print("failed cases number: {}".format(result.failure_count))
+    print("failed cases reason: {}".format(result.failures))
+    print("error cases number: {}".format(result.error_count))
+    print("error cases reason: {}".format(result.errors))
+    print("success cases number: {}".format(result.success_count))
     # # 饼状图报告
     # runner_echarts = HTMLTestRunner_Echarts(stream=fp,
     #                                         title=title,
