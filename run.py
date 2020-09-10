@@ -12,14 +12,14 @@ base_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '')
 print(base_path)
 
 
-def run_test(type):
+def run_test(report_type=1):
     case_dir = base_path + 'test_cases/'
     discover = unittest.defaultTestLoader.discover(case_dir, pattern='test_*.py')
     filename = base_path + 'report/report_test_gd.html'
     fp = open(filename, 'wb')
     title = '接口自动化测试报告'
     # HTMLTestRunner
-    if type == 1:
+    if report_type == 1:
         runner = HTMLTestRunner(stream=fp,
                                 title=title,
                                 description='执行环境：系统：' + platform.platform() + '，Python版本：' + sys.version,
@@ -27,7 +27,7 @@ def run_test(type):
                                 tester='yinqiang')
         result = runner.run(discover)
     # 饼状图报告
-    elif type == 2:
+    elif report_type == 2:
         runner_echarts = HTMLTestRunner_Echarts(stream=fp,
                                                 title=title,
                                                 description='Interface AutoTest,执行环境：系统：' + platform.platform() +
@@ -35,7 +35,7 @@ def run_test(type):
                                                 verbosity=2)
         result = runner_echarts.run(discover)
     # BeautifulReport
-    elif type == 3:
+    elif report_type == 3:
         result = BeautifulReport(discover)
         result.report(filename=time.strftime("%Y-%m-%d %H:%M:%S") + '测试报告',
                       description='*****报告' + ' 执行环境：系统：' + platform.platform() + '，Python版本：' + sys.version,
