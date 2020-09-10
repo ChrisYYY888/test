@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7b8b057-a80f-45d3-b5f8-0777e7ea6d47" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/BeautifulReport/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BeautifulReport/template/template.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BeautifulReport/template/theme.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BeautifulReport/template/theme_candy.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BeautifulReport/template/theme_cyan.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BeautifulReport/template/theme_default.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BeautifulReport/template/theme_memories.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BeautifulReport.py" beforeDir="false" afterPath="$PROJECT_DIR$/BeautifulReport/BeautifulReport.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/report_test_gd.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/report_test_gd.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -173,7 +164,7 @@
       <workItem from="1599322505237" duration="9000" />
       <workItem from="1599469314517" duration="7735000" />
       <workItem from="1599645748069" duration="94000" />
-      <workItem from="1599645859958" duration="1288000" />
+      <workItem from="1599645859958" duration="2385000" />
     </task>
     <servers />
   </component>
